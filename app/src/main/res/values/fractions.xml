@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--头_aspect方面——Ratio比，fraction：分数-->
+    <!--178% 16：9-->
+    <item name="header_aspectRatio" type="fraction">178%</item>
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.goals.percentlayouttest.MainActivity">
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#FF1493"
+            app:layout_aspectRatio="@fraction/header_aspectRatio"
+            app:layout_widthPercent="60%"/>
+
+
+        <!--layout_widthPercent
+layout_heightPercent
+layout_marginPercent
+layout_marginLeftPercent
+layout_marginTopPercent
+layout_marginRightPercent
+layout_marginBottomPercent
+layout_marginStartPercent
+layout_marginEndPercent
+layout_aspectRatio
+特别地，layout_aspectRatio是用来表示宽高比例，当我们指定宽或者高的任一边的长度或者百分比，其就能够自动地计算出来另外一边的长度。-->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@+id/image"
+            android:layout_gravity="left|top"
+            android:background="#44ff0000"
+            android:gravity="center"
+            android:text="width:30%,height:20%"
+            app:layout_heightPercent="20%"
+            app:layout_marginBottomPercent="30%"
+            app:layout_marginLeftPercent="30%"
+            app:layout_marginRightPercent="40%"
+            app:layout_marginTopPercent="10%"
+            app:layout_widthPercent="30%"/>
+
+    </android.support.percent.PercentRelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
